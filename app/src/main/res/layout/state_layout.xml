@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<itdujun.com.myapplication.StateLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/loadview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载中..."
+            android:textSize="12sp"
+            android:layout_margin="8dp"
+            android:textColor="#666666"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no_net_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor=""
+            android:text="@string/load_no_net"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="10dp"
+            android:text="网络不给力，点击重新加载"
+            android:textColor="@color/main_color"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor=""
+            android:text="@string/load_empty"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/failure_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textColor=""
+            android:text="@string/load_failure"/>
+
+    </LinearLayout>
+
+
+</itdujun.com.myapplication.StateLayout>

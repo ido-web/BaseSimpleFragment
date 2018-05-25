@@ -1,0 +1,5 @@
+<resources>
+    <string name="load_failure">&#xe600;</string>
+    <string name="load_no_net">&#xe717;</string>
+    <string name="load_empty">&#xe65d;</string>
+</resources>
