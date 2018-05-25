@@ -1,0 +1,2 @@
+# BaseSimpleFragment
+实现LoadingView、contentView、EmptyView、FailureView、懒加载的BaseFragment
